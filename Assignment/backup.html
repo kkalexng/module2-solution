@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Are you Hungry?</title>
+</head>
+
+<style type="text/css">
+
+h1{ text-align: center;
+	font-family: lucida handwriting }
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+div{	
+	
+	align-content: top;
+	position:  relative;
+	padding: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h2{
+	font-size: 30px;
+	text-align:  center;	
+	border:  1px solid black;
+	margin: 0px;
+	
+	vertical-align: text-top;
+	position:  absolute;
+	top: 10px;
+	right: 10px;
+	width: 200px;
+	font-family: georgia;
+	background-color: rgba(255, 99, 71, 1.0);
+	color: yellow;
+	class = "col-lg-1"
+}
+
+p{
+	padding: 50px 15px 10px 10px;
+	margin: 0px;
+	border: 1px solid black;
+	font-family: courier new;
+	font-weight: bold;
+	background-color: rgba(255, 99, 71, 0.5);
+	class = "col-lg-1"
+}
+
+/*****************Large Device**************************/
+
+@media (min-width: 992px){
+   .col-lg-1{
+    float: left;
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 50%;
+  }
+  .col-md-2 {
+    width: 100%;
+  }
+}
+
+</style>
+
+<body>
+<h1>Our Menu</h1>
+
+<div id: "Chicken", class = "col-lg-1 col-md-1";>
+	<h2 id: "Chicken"> Chicken </h2>
+	<p id: "Chicken"> Layout: In the desktop view (992px and above), each of the 3 sections should take up equal amount of space on the screen. As you make the browser window wider or narrower, each section should become wider or narrower. (Hint: use percentages to define width and use the 'float' property. See Lecture 24). For a visual reference of this view, see the desktop mockup illustration below. </p>
+</div>
+
+<div id:"Beef", class = "col-lg-1 col-md-1">
+	<h2 id: "Beef"> Beef </h2>
+	<p id: "Beef"> Layout: In the tablet view (between 768px and 991px, inclusively), the first 2 sections should be in the first row and be of equal size. The 3rd section should be in the second row and take up the entire row by itself. For a visual reference of this view, see the tablet mockup illustration below. </p>
+</div>
+
+<div id: "Sushi", class = "col-lg-1  col-md-2">
+	<h2 id: "Sushi"> Sushi </h2>
+	<p id: "Sushi"> Layout: In the mobile view (equal to or less than 767px), each section should take up the entire row. For a visual reference of this view, see the mobile mockup illustration below. </p>
+</div>
+
+</body>
+
+
+
+</html>

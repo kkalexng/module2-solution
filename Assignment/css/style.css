@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+h1{ text-align: center;
+	font-family: lucida handwriting }
+
+div{	
+	align-content: top;
+	position:  relative;
+	padding: 10px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+h2{
+	font-size: 30px;
+	text-align:  center;	
+	border:  1px solid black;
+	margin: 0px;
+	
+	vertical-align: text-top;
+	position:  absolute;
+	top: 10px;
+	right: 10px;
+	width: 200px;
+	font-family: georgia;
+	color: yellow;
+	background-color: rgba(255, 99, 71, 1.0);
+	
+	
+}
+
+p{
+	padding: 50px 15px 10px 10px;
+	margin: 0px;
+	border: 1px solid black;
+	font-family: courier new;
+	font-weight: bold;
+	background-color: rgba(255, 99, 71, 0.5);
+}
+
+#Chicken{
+	background-color:  blue;
+}
+
+#Beef{
+	background-color:  green;
+}
+
+/*****************Large Device**************************/
+
+@media (min-width: 992px){
+   .col-lg-3{
+    float: left;
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 100%;
+  }
+  .col-md-2 {
+    width: 50%;
+  }
+}
